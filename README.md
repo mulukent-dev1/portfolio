@@ -18,14 +18,14 @@ Welcome to my personal developer portfolio — built with **React**, **CSS**, an
 
 ## 🔗 Live Demo
 
-👉 [View Portfolio]()git
+👉 [View Portfolio](https://mulukentessema.netlify.app/)git
 
 ## 📬 Contact
 
 Feel free to reach out or connect:
 
 - 📧 Email: contactmuluken@gmail.com  
-- 🌐 Website: [mulukentessema.dev](https://your-portfolio-link.com)
+- 🌐 Website: [mulukentessema.dev](https://mulukentessema.netlify.app/)
 - 🐙 GitHub: [@mulukent-dev1](https://github.com/mulukent-dev1)
 
 ---
