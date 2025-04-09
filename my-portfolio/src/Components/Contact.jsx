@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react'; // Add useEffect
+import React, { useState, useEffect } from 'react'; 
 import { motion } from 'framer-motion';
-import { db } from '../firebase';
-import { collection, addDoc } from 'firebase/firestore';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'; // Add faInstagram
-import Alert from './Alert'; // Import the custom Alert component
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Alert from './Alert'; 
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -20,8 +18,8 @@ const Contact = () => {
     if (showAlert) {
       const timer = setTimeout(() => {
         setShowAlert(false);
-      }, 3000); // Hide after 3 seconds
-      return () => clearTimeout(timer); // Cleanup the timer
+      }, 3000); 
+      return () => clearTimeout(timer); 
     }
   }, [showAlert]);
 
@@ -34,17 +32,17 @@ const Contact = () => {
         message,
         timestamp: new Date(),
       });
-      // Show success alert
+      
       setAlertMessage('Message sent successfully!');
       setAlertType('success');
       setShowAlert(true);
-      // Clear form fields
+     
       setName('');
       setEmail('');
       setMessage('');
     } catch (error) {
       console.error('Error sending message: ', error);
-      // Show error alert
+     
       setAlertMessage('Failed to send message. Please try again.');
       setAlertType('error');
       setShowAlert(true);
